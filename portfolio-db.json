@@ -1,0 +1,130 @@
+{
+    "personalData": {
+        "name": "Kfir"
+    },
+    "projects": [
+        {
+            "title": "Doakes Helper",
+            "releaseYear": 2016,
+            "images": [
+                "https://i.imgur.com/QtcrXIi.png", 
+                "https://i.imgur.com/t61JwV3.png", 
+                "https://i.imgur.com/eE2k2PJ.png"
+            ],
+            "paragraphs": [
+                "So far, this is my proudest after-hours project. It has accumulated more than 25,000 unique users over the lifespan of 4+ years. This desktop application still serves many GTA SA-MP players as a companion app.",
+                "Users have donated over $300 to support the project, submitted bug reports and even uploaded YouTube videos that showcase or explain it."
+            ],
+            "tags": [
+                "Windows Desktop App",
+                "WPF",
+                "C#",
+                "ASP.NET",
+                "Full Stack"
+            ]
+        },
+        {
+            "title": "Context Switch",
+            "releaseYear": 2016,
+            "images": [
+
+            ],
+            "paragraphs": [
+
+            ],
+            "tags": [
+                "Windows Desktop App",
+                "WPF",
+                "C#"
+            ]
+        },
+        {
+            "title": "Blog for Argentina trip",
+            "releaseYear": 2020,
+            "images": [
+
+            ],
+            "paragraphs": [
+
+            ],
+            "tags": [
+                "Angular",
+                "NodeJS"
+            ]
+        },
+        {
+            "title": "Election system for my high-school",
+            "releaseYear": 2015,
+            "images": [
+
+            ],
+            "paragraphs": [
+
+            ],
+            "tags": [
+                "ASP.NET",
+                "C#",
+                "Teamwork"
+            ]
+        },
+        {
+            "title": "Simple analytics tool for websites & apps",
+            "releaseYear": 2014,
+            "images": [
+
+            ],
+            "paragraphs": [
+
+            ],
+            "tags": [
+                "ASP.NET",
+                "C#",
+                "Full Stack"
+            ]
+        },
+        {
+            "title": "Keyboard Hook NuGET package",
+            "releaseYear": 2019,
+            "images": [
+
+            ],
+            "paragraphs": [
+
+            ],
+            "tags": [
+                "C#"
+            ]
+        },
+        {
+            "title": "Custom HUD for GTA:SA",
+            "releaseYear": 2019,
+            "images": [
+
+            ],
+            "paragraphs": [
+
+            ],
+            "tags": [
+                "C#",
+                "WPF",
+                "Memory Injection",
+                "DirectX low-level API"
+            ]
+        },
+        {
+            "title": "Action wheel game feature",
+            "releaseYear": 2020,
+            "images": [
+
+            ],
+            "paragraphs": [
+
+            ],
+            "tags": [
+                "HTML",
+                "JavaScript",
+                "CSS"
+            ]
+        }
+    ]
+}
