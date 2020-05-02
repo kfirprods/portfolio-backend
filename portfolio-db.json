@@ -1,130 +1,116 @@
 {
-    "personalData": {
-        "name": "Kfir"
+  "personalData": {
+    "name": "Kfir"
+  },
+  "administrators": [
+    {
+      "username": "kfirprods",
+      "password": "10bd77c982c4d1c66811fc505e81310e36b18015fe4e3c8137af2443c237cad64f8d45a9223497075d7fc91718bd5bf0f9bd0f3f939ab2063ff3b2e91ff6ab3f"
+    }
+  ],
+  "projects": [
+    {
+      "id": "doakes-helper",
+      "title": "Doakes Helper",
+      "releaseYear": 2016,
+      "images": [
+        "https://i.imgur.com/QtcrXIi.png",
+        "https://i.imgur.com/t61JwV3.png",
+        "https://i.imgur.com/eE2k2PJ.png"
+      ],
+      "paragraphs": [
+        "So far, this is my proudest after-hours project. It has accumulated more than 25,000 unique users over the lifespan of 4+ years. This desktop application still serves many GTA SA-MP players as a companion app.",
+        "Users have donated over $300 to support the project, submitted bug reports and even uploaded YouTube videos that showcase or explain it."
+      ],
+      "tags": [
+        "Windows Desktop App",
+        "WPF",
+        "C#",
+        "ASP.NET",
+        "Full Stack"
+      ]
     },
-    "projects": [
-        {
-            "title": "Doakes Helper",
-            "releaseYear": 2016,
-            "images": [
-                "https://i.imgur.com/QtcrXIi.png", 
-                "https://i.imgur.com/t61JwV3.png", 
-                "https://i.imgur.com/eE2k2PJ.png"
-            ],
-            "paragraphs": [
-                "So far, this is my proudest after-hours project. It has accumulated more than 25,000 unique users over the lifespan of 4+ years. This desktop application still serves many GTA SA-MP players as a companion app.",
-                "Users have donated over $300 to support the project, submitted bug reports and even uploaded YouTube videos that showcase or explain it."
-            ],
-            "tags": [
-                "Windows Desktop App",
-                "WPF",
-                "C#",
-                "ASP.NET",
-                "Full Stack"
-            ]
-        },
-        {
-            "title": "Context Switch",
-            "releaseYear": 2016,
-            "images": [
-
-            ],
-            "paragraphs": [
-
-            ],
-            "tags": [
-                "Windows Desktop App",
-                "WPF",
-                "C#"
-            ]
-        },
-        {
-            "title": "Blog for Argentina trip",
-            "releaseYear": 2020,
-            "images": [
-
-            ],
-            "paragraphs": [
-
-            ],
-            "tags": [
-                "Angular",
-                "NodeJS"
-            ]
-        },
-        {
-            "title": "Election system for my high-school",
-            "releaseYear": 2015,
-            "images": [
-
-            ],
-            "paragraphs": [
-
-            ],
-            "tags": [
-                "ASP.NET",
-                "C#",
-                "Teamwork"
-            ]
-        },
-        {
-            "title": "Simple analytics tool for websites & apps",
-            "releaseYear": 2014,
-            "images": [
-
-            ],
-            "paragraphs": [
-
-            ],
-            "tags": [
-                "ASP.NET",
-                "C#",
-                "Full Stack"
-            ]
-        },
-        {
-            "title": "Keyboard Hook NuGET package",
-            "releaseYear": 2019,
-            "images": [
-
-            ],
-            "paragraphs": [
-
-            ],
-            "tags": [
-                "C#"
-            ]
-        },
-        {
-            "title": "Custom HUD for GTA:SA",
-            "releaseYear": 2019,
-            "images": [
-
-            ],
-            "paragraphs": [
-
-            ],
-            "tags": [
-                "C#",
-                "WPF",
-                "Memory Injection",
-                "DirectX low-level API"
-            ]
-        },
-        {
-            "title": "Action wheel game feature",
-            "releaseYear": 2020,
-            "images": [
-
-            ],
-            "paragraphs": [
-
-            ],
-            "tags": [
-                "HTML",
-                "JavaScript",
-                "CSS"
-            ]
-        }
-    ]
+    {
+      "id": "context-switch",
+      "title": "Context Switch",
+      "releaseYear": 2016,
+      "images": [],
+      "paragraphs": [],
+      "tags": [
+        "Windows Desktop App",
+        "WPF",
+        "C#"
+      ]
+    },
+    {
+      "id": "argentina-blog",
+      "title": "Blog for my Argentina trip",
+      "releaseYear": 2020,
+      "images": [],
+      "paragraphs": [],
+      "tags": [
+        "Angular",
+        "NodeJS"
+      ]
+    },
+    {
+      "id": "elections",
+      "title": "Election system for my high-school",
+      "releaseYear": 2015,
+      "images": [],
+      "paragraphs": [],
+      "tags": [
+        "ASP.NET",
+        "C#",
+        "Teamwork"
+      ]
+    },
+    {
+      "id": "analytics",
+      "title": "Simple analytics tool for websites & apps",
+      "releaseYear": 2014,
+      "images": [],
+      "paragraphs": [],
+      "tags": [
+        "ASP.NET",
+        "C#",
+        "Full Stack"
+      ]
+    },
+    {
+      "id": "keyboard-hook-nuget",
+      "title": "Keyboard Hook NuGET package",
+      "releaseYear": 2019,
+      "images": [],
+      "paragraphs": [],
+      "tags": [
+        "C#"
+      ]
+    },
+    {
+      "id": "gta-sa-hud",
+      "title": "Custom HUD for GTA:SA",
+      "releaseYear": 2019,
+      "images": [],
+      "paragraphs": [],
+      "tags": [
+        "C#",
+        "WPF",
+        "Memory Injection",
+        "DirectX low-level API"
+      ]
+    },
+    {
+      "id": "rage-animwheel",
+      "title": "Action wheel game feature",
+      "releaseYear": 2020,
+      "images": [],
+      "paragraphs": [],
+      "tags": [
+        "HTML",
+        "JavaScript",
+        "CSS"
+      ]
+    }
+  ]
 }

@@ -39,20 +39,40 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
 Object.defineProperty(exports, "__esModule", { value: true });
+var hash_handler_1 = require("./services/hash-handler");
 var express_1 = __importDefault(require("express"));
-var data_provider_1 = require("./data-providers/data-provider");
+var express_jwt_1 = __importDefault(require("express-jwt"));
+var body_parser_1 = __importDefault(require("body-parser"));
 var lowdb = require("lowdb");
 var FileAsync_1 = __importDefault(require("lowdb/adapters/FileAsync"));
+var data_provider_1 = require("./services/data-provider");
+var authentication_service_1 = require("./services/authentication-service");
 var app = express_1.default();
-app.use(function (req, res, next) { res.header("Access-Control-Allow-Origin", "*"); next(); });
+app.use(body_parser_1.default.json());
+app.use(function (req, res, next) {
+    res.header("Access-Control-Allow-Origin", "*");
+    res.header("Access-Control-Allow-Headers", "Access-Control-Allow-Headers, Origin,Accept, X-Requested-With, Content-Type, Access-Control-Request-Method, Access-Control-Request-Headers");
+    next();
+});
+app.use(express_jwt_1.default({ secret: 'portfolio-super-secret' }).unless(function (request) {
+    if (["GET", "OPTIONS"].includes(request.method)) {
+        return true;
+    }
+    if (request.path == "/auth") {
+        return true;
+    }
+    return false;
+}));
 var port = 3000;
 var localDbPath = 'portfolio-db.json';
 var dataProvider = new data_provider_1.DataProvider(lowdb(new FileAsync_1.default(localDbPath)));
+var hashHandler = new hash_handler_1.HashHandler("sha512");
+var authenticationService = new authentication_service_1.AuthenticationService(dataProvider, hashHandler);
 app.get('/', function (req, res) { return __awaiter(void 0, void 0, void 0, function () {
     var data;
     return __generator(this, function (_a) {
         switch (_a.label) {
-            case 0: return [4 /*yield*/, dataProvider.GetPersonalData()];
+            case 0: return [4 /*yield*/, dataProvider.getPersonalData()];
             case 1:
                 data = _a.sent();
                 res.json(data);
@@ -66,7 +86,7 @@ app.get('/projects', function (req, res) { return __awaiter(void 0, void 0, void
         switch (_c.label) {
             case 0:
                 _b = (_a = res).json;
-                return [4 /*yield*/, dataProvider.GetProjects()];
+                return [4 /*yield*/, dataProvider.getProjects()];
             case 1:
                 _b.apply(_a, [_c.sent()]);
                 return [2 /*return*/];
@@ -79,9 +99,33 @@ app.get('/experiences', function (req, res) { return __awaiter(void 0, void 0, v
         switch (_c.label) {
             case 0:
                 _b = (_a = res).json;
-                return [4 /*yield*/, dataProvider.GetExperiences()];
+                return [4 /*yield*/, dataProvider.getExperiences()];
             case 1:
                 _b.apply(_a, [_c.sent()]);
+                return [2 /*return*/];
+        }
+    });
+}); });
+app.post('/experiences/{experienceId}', function (req, res) { return __awaiter(void 0, void 0, void 0, function () {
+    return __generator(this, function (_a) {
+        return [2 /*return*/];
+    });
+}); });
+app.post('/auth', function (req, res) { return __awaiter(void 0, void 0, void 0, function () {
+    var body, token;
+    return __generator(this, function (_a) {
+        switch (_a.label) {
+            case 0:
+                body = req.body;
+                return [4 /*yield*/, authenticationService.authenticate(body.username, body.password)];
+            case 1:
+                token = _a.sent();
+                if (!token) {
+                    console.log("Authentication failed for user " + body.username);
+                    return [2 /*return*/, res.sendStatus(401)];
+                }
+                console.log("Authentication succeeded for user " + body.username);
+                res.send({ token: token });
                 return [2 /*return*/];
         }
     });
