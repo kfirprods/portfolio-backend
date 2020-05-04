@@ -41,7 +41,7 @@ export class DataProvider  {
         return Promise.resolve(administrators.find(admin => admin.username == username));
     }
 
-    async updateProject(projectId: string, project: Project) {
+    async updateProject(projectId: string, project: Project): Promise<void> {
         const db = await this.db;
         await db.get('projects').find({id: projectId}).assign(project).write();
     }

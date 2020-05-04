@@ -60,6 +60,7 @@ app.put('/projects/:projectId', async (req, res) => {
     const newProject = req.body.project;
     try {
         await dataProvider.updateProject(req.params.projectId, newProject);
+        return res.sendStatus(200);
     } catch {
         return res.sendStatus(404);
     }
