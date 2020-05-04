@@ -13,6 +13,7 @@
       "id": "doakes-helper",
       "title": "Doakes Helper",
       "releaseYear": 2016,
+      "priority": 1,
       "images": [
         "https://i.imgur.com/QtcrXIi.png",
         "https://i.imgur.com/t61JwV3.png",
@@ -34,8 +35,16 @@
       "id": "context-switch",
       "title": "Context Switch",
       "releaseYear": 2016,
-      "images": [],
-      "paragraphs": [],
+      "priority": 3,
+      "images": [
+        "https://i.imgur.com/4Z5XzRv.png",
+        "https://i.imgur.com/gc4WCXZ.png",
+        "https://i.imgur.com/hHr94BW.png"
+      ],
+      "paragraphs": [
+        "This fun project helped me utilize my PC and my laptop at the same time without moving my hands off my PC's keyboard and mouse.",
+        "Context Switch is a desktop application that lets you seamlessly switch the targets of your keyboard, mouse and headphones between two devices. All you have to do is click the hotkey and - voila!"
+      ],
       "tags": [
         "Windows Desktop App",
         "WPF",
@@ -46,8 +55,16 @@
       "id": "argentina-blog",
       "title": "Blog for my Argentina trip",
       "releaseYear": 2020,
-      "images": [],
-      "paragraphs": [],
+      "priority": 2,
+      "images": [
+        "https://i.imgur.com/RVFHoM6.png",
+        "https://i.imgur.com/4TysC8S.png",
+        "https://i.imgur.com/yU3dpIl.png"
+      ],
+      "paragraphs": [
+        "I only had 3 weeks to spend in Argentina, and I had absolutely no intention to make dozens of phone calls to friends and family; repeating the same story over and over, sending photos on WhatsApp.",
+        "I wrote a dynamic blog from scratch (the majority of the code was written during the long flight), then refined it slightly throughout the trip. I consider it a success, because even my 58 years old mom managed to browse the blog!"
+      ],
       "tags": [
         "Angular",
         "NodeJS"
@@ -57,8 +74,15 @@
       "id": "elections",
       "title": "Election system for my high-school",
       "releaseYear": 2015,
-      "images": [],
-      "paragraphs": [],
+      "priority": 5,
+      "images": [
+        "https://i.imgur.com/W7PaVEW.png"
+      ],
+      "paragraphs": [
+        "The 2015 Israeli elections were just 3 weeks away when my teacher approached me and asked if I would be willing to create an election system for our high school.",
+        "I assembled a team with two more classmates. Together we created a responsive web application, where students used their ID to sign in, cast their votes and even view a graph of the results.",
+        "Even though we barely had time to test this system, the election day went by smoothly and we appeared on 3 different local newspapers."
+      ],
       "tags": [
         "ASP.NET",
         "C#",
@@ -69,8 +93,17 @@
       "id": "analytics",
       "title": "Simple analytics tool for websites & apps",
       "releaseYear": 2014,
-      "images": [],
-      "paragraphs": [],
+      "priority": 4,
+      "images": [
+        "https://i.imgur.com/JbBLV25.png",
+        "https://i.imgur.com/KesKiDS.png",
+        "https://i.imgur.com/DiDc2e6.png"
+      ],
+      "paragraphs": [
+        "I swear - I tried to use google analytics, but the overwhelming interface that I encountered in 2014 pushed me away. Well, I enjoy reinventing the wheel anyway, so I created my own little analytics system, with a goal of keeping it simple.",
+        "In fact, this utility collects just enough data about the users of my apps, that I never even needed to use another one.",
+        "It answers essential questions, such as \"How many unique users do I have? How much time do they spend using my app? Which web pages do they use?\""
+      ],
       "tags": [
         "ASP.NET",
         "C#",
@@ -81,8 +114,15 @@
       "id": "keyboard-hook-nuget",
       "title": "Keyboard Hook NuGET package",
       "releaseYear": 2019,
-      "images": [],
-      "paragraphs": [],
+      "priority": 7,
+      "images": [
+        "https://i.imgur.com/LtIPrYg.png",
+        "https://i.imgur.com/NRtURdA.png"
+      ],
+      "paragraphs": [
+        "One of my WPF projects required global hotkeys, so that users could interact with it while playing games. I knew registering a keyboard hook could seem like a malicious operation, but I had to use it -- yet I still wanted to be transparent with my users.",
+        "And so, I coded an open-source NuGET package that allows registering specific hotkeys, but not the recording of all keystrokes."
+      ],
       "tags": [
         "C#"
       ]
@@ -91,8 +131,15 @@
       "id": "gta-sa-hud",
       "title": "Custom HUD for GTA:SA",
       "releaseYear": 2019,
-      "images": [],
-      "paragraphs": [],
+      "priority": 8,
+      "images": [
+        "https://i.imgur.com/7gkxC5Z.png",
+        "https://i.imgur.com/IgfSrvz.png"
+      ],
+      "paragraphs": [
+        "An open source desktop application that enhances the experience of GTA:SA players by adding a custom HUD that tells them where they are.",
+        "The creation of this project involved reverse engineering, memory injection and other low-level skills that are normally \"out of my scope\". However, I really wanted to make it work, so I just kept on going until I made it work."
+      ],
       "tags": [
         "C#",
         "WPF",
@@ -102,10 +149,18 @@
     },
     {
       "id": "rage-animwheel",
-      "title": "Action wheel game feature",
+      "title": "GTA V Animation Wheel",
       "releaseYear": 2020,
-      "images": [],
-      "paragraphs": [],
+      "priority": 6,
+      "images": [
+        "https://i.imgur.com/iiY7nCA.png",
+        "https://i.imgur.com/CZkKVnC.png"
+      ],
+      "paragraphs": [
+        "After demonstrating my skills to GTA:SA communities over the past 4 years, a GTA V community manager reached out to me to ask if I'd be willing to lend a hand.",
+        "The customizable animation wheel is rendered by a fragile in-game browser. So fragile, that developers often use vanilla javascript.",
+        "The community (gta.world) integrated this open source project into their game-mode and the community was super grateful for it."
+      ],
       "tags": [
         "HTML",
         "JavaScript",
