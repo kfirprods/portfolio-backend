@@ -35,7 +35,7 @@ function logErrors (err, req, res, next) {
     next(err)
   }
 
-const port = 3000;
+const port = 3001;
 
 const localDbPath = 'portfolio-db.json';
 

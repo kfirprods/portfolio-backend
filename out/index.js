@@ -44,7 +44,7 @@ function logErrors(err, req, res, next) {
     console.info(req.headers);
     next(err);
 }
-const port = 3000;
+const port = 3001;
 const localDbPath = 'portfolio-db.json';
 const dataProvider = new data_provider_1.DataProvider(lowdb(new FileAsync_1.default(localDbPath)));
 const hashHandler = new hash_handler_1.HashHandler("sha512");
@@ -63,6 +63,7 @@ app.put('/projects/:projectId', (req, res) => __awaiter(void 0, void 0, void 0, 
     const newProject = req.body.project;
     try {
         yield dataProvider.updateProject(req.params.projectId, newProject);
+        return res.sendStatus(200);
     }
     catch (_a) {
         return res.sendStatus(404);
